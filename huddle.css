@@ -11,8 +11,9 @@
     --shadow: 2px 4px 10px lightgrey;
     --shadow-sharp: 0px -1px 3px lightgrey;
     --inverted:invert(1) sepia(1) saturate(1) brightness(9.1) contrast(1.1);
+  --inverted-hover:invert(48%) sepia(63%) saturate(2538%) hue-rotate(295deg) brightness(102%) contrast(111%);
 }
-body{
+  body{
     font-family: 'Open Sans', sans-serif;
     font-size:18px;
 }
@@ -69,6 +70,7 @@ header{
     font-size: 14px;
     font-weight: 700;
     box-shadow: var(--shadow);
+    transition: all .5s ease-in-out;
 }
 li{
     list-style: none;
@@ -250,7 +252,8 @@ footer{
 }
 .sect-2 ul,.sect-3 ul{
     font-size: 14px;
-    width:100%;  
+    width:100%; 
+     
 }
 .sect-2 ul li,.sect-3 ul li{
     margin-bottom: 20px;
@@ -291,6 +294,8 @@ footer> p{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s ease-in-out;
+    
 }
 .socials ul li:nth-child(1) a .icon,
 .socials ul li:nth-child(2) a .icon,
@@ -299,6 +304,8 @@ footer> p{
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: all .5s ease-in-out;
+   
 }
 .socials ul li:nth-child(2) a .icon{
     background-image: url("images/icons8-twitter.svg");
@@ -309,9 +316,13 @@ footer> p{
 .socials ul li:hover{
     outline: 2px solid var(--action-color);
 }
-.socials ul li:hover a .icon svg{
-    fill: var(--action-color);
+.socials ul li:hover a .icon {
+    filter: var(--inverted-hover);
     
+}
+.sect-2 ul li a,.sect-3 ul li a{
+    border-bottom:0;
+    transition: all .5s ease-in-out;
 }
 .sect-2 ul li:hover a,
 .sect-3 ul li:hover a{
