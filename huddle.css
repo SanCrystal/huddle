@@ -37,7 +37,7 @@ body{
     position: absolute;
     top:0;
     left:0;
-    background-image: url("/images/bg-hero-desktop.svg");
+    background-image: url("images/bg-hero-desktop.svg");
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -46,7 +46,7 @@ body{
 .section-1 .logo{
     width:27%;
     height: 50px;
-    background-image: url("/images/logo.svg");
+    background-image: url("images/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
